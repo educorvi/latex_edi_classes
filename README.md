@@ -22,24 +22,25 @@ Please add your own path to the path-environment-var:
 
 TEXMFHOME = $HOME/Library/texmf,$HOME/latex_edi_classes/editexmf
 
-.. code-block::
 
+```
   $ texhash
+```
 
-With the following command you can check if your private-dir is part of TEXMFHOME
+With the following command you can check if your private-dir is part of TEXMFHOME:
 
-.. code-block::
-
+```
   $ kpsepath -n latex tex
-  
-Update the latex registration
+```
 
-.. code-block::
+Update the latex registration:
 
+```
   $ sudo mktexlsr
+```
 
-Check if your Latex-Distribution can find your Class-File
+Check if your Latex-Distribution is able to find your Class-File:
 
-.. code-block::
-
+```
   $ kpsewhich your_class_file.cls
+```
