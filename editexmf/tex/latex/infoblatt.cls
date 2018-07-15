@@ -66,7 +66,7 @@ Medienbestellung Wiesbaden, Tel. (0611) 131-8221, Fax:(0611) 131-8222, email: me
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax\RequirePackage{xcolor}
 
-\newcommand*{\Logo}{\includegraphics[width=5.5cm,height=2cm]{/Users/larswalther/plone4/zinstance/src/edi.pdfprint/edi/pdfprint/stammblatt_templates/logo.png}} 
+\newcommand*{\Logo}{\includegraphics[width=5.5cm,height=2cm]{$HOME/latex_edi_classes/images/logo.png}} 
 \AddToShipoutPicture{% 
 	\AtPageUpperLeft{% 
 		\makebox(\LenToUnit\paperwidth,0)[r]{% rechtsorientiert(r)
