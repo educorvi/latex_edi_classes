@@ -12,12 +12,14 @@ Installation
 TexLive 2017
 ------------
 
-.. code-block::
 
+```
   $ git clone https://github.com/educorvi/latex_edi_classes.git
   $ vi /usr/local/texlive/2017/texmf.cnf
+```
 
-Please add your own path to the path-environment-var
+Please add your own path to the path-environment-var:
+
 TEXMFHOME = $HOME/Library/texmf,$HOME/latex_edi_classes/editexmf
 
 .. code-block::
