@@ -9,8 +9,10 @@
 \RequirePackage{adjustbox}
 \RequirePackage[absolute]{textpos}
 \RequirePackage{scrlayer-scrpage} 
-\RequirePackage[scaled]{helvet}	
+\RequirePackage{helvet}	
 \RequirePackage[T1]{fontenc}
+\RequirePackage{amssymb}
+
 \renewcommand\familydefault{\sfdefault}
 
 \pagestyle{scrheadings}			%Pagestyle festlegen
@@ -37,13 +39,15 @@
 }
 
 \newcommand{\fachgebiet}[1]{			
-\begin{textblock*}{35mm}(157.5mm,28mm) 
+\begin{textblock*}{35mm}(152.5mm,30mm) 
 \noindent
 \normalsize{\textbf{\textcolor{gray}{{#1}}}}
 \end{textblock*}
 }
+\newcommand{\rechts}{\raggedright}
 
 \newcommand{\bestellnummer}[1]{			
+
 \begin{textblock*}{30mm}(157.5mm,45mm) 
 \noindent
 \begin{itemize}
@@ -66,7 +70,7 @@ Medienbestellung Wiesbaden, Tel. (0611) 131-8221, Fax:(0611) 131-8222, email: me
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax\RequirePackage{xcolor}
 
-\newcommand*{\Logo}{\includegraphics[width=5.5cm,height=2cm]{$HOME/latex_edi_classes/images/logo.png}} 
+\newcommand*{\Logo}{\includegraphics[width=5.5cm,height=8cm]{$HOME/latex_edi_classes/images/Logo_BGETEM_4c_2z.pdf}} 
 \AddToShipoutPicture{% 
 	\AtPageUpperLeft{% 
 		\makebox(\LenToUnit\paperwidth,0)[r]{% rechtsorientiert(r)
@@ -76,3 +80,5 @@ Medienbestellung Wiesbaden, Tel. (0611) 131-8221, Fax:(0611) 131-8222, email: me
 	}% 
 }% 
 } 
+
+
