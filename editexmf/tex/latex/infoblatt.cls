@@ -12,6 +12,7 @@
 \RequirePackage{helvet}	
 \RequirePackage[T1]{fontenc}
 \RequirePackage{amssymb}
+\RequirePackage[a4paper, left= 2cm, right=3cm, top=6cm, bottom=4cm]{geometry}
 
 \renewcommand\familydefault{\sfdefault}
 
@@ -58,7 +59,7 @@
 }
 
 \newcommand{\fusszeile}{	
-\begin{textblock*}{160mm}(25mm,260mm) 
+\begin{textblock*}{160mm}(25mm,270mm) 
 \noindent
 \small{\begin{center}Berufsgenossenschaft Energie Textil Elektro Medienerzeugnisse, www.bgetem.de\\
 Medienbestellung Wiesbaden, Tel. (0611) 131-8221, Fax:(0611) 131-8222, email: medien.dp@bgetem.de\end{center}}
