@@ -16,11 +16,15 @@
 
 \renewcommand\familydefault{\sfdefault}
 
-\pagestyle{scrheadings}			%Pagestyle festlegen
-\clearpairofpagestyles			%Innen/Mitte/Auﬂen der Fuﬂ/-Kopfzeile leeren
+\pagestyle{scrheadings}				%Pagestyle festlegen
+\clearpairofpagestyles				%Innen/Mitte/Auﬂen der Fuﬂ/-Kopfzeile leeren
 
 \chead{\pagemark}
  \thispagestyle{empty}
+
+\setcounter{secnumdepth}{0}			%Nummerierung der ‹berschriften entfernen
+
+
 
 \newcommand{\doctitel}[1]{			
 \begin{textblock*}{100mm}(19mm,20mm) 
@@ -29,8 +33,8 @@
 \end{textblock*}
 }
 
-\newcommand{\stand}[1]{			%fusszeile als Textblock da so am besten umsetzbar
-\begin{textblock*}{30mm}(19mm,45mm) %boxbreite, koordinaten der box mit oben links als 0/0
+\newcommand{\stand}[1]{				%fusszeile als Textblock da so am besten umsetzbar
+\begin{textblock*}{30mm}(19mm,45mm) 	%boxbreite, koordinaten der box mit oben links als 0/0
 \noindent
 \begin{itemize}
  \renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
