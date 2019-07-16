@@ -15,7 +15,7 @@
 \RequirePackage[absolute]{textpos}				%Textblöcke Fusszeile, Pos. (abh. von Schriftart)
 
 \RequirePackage[utf8x]{inputenc}				%direktes Einbinden von Umlauten
-\RequirePackage[english, ngerman]{babel}		%Deutsch=primäre Sprache, Englisch optional ( wichtig 											für Darstellung eines Datums o.ä.)
+\RequirePackage[english, ngerman]{babel}		%Deutsch=primäre Sprache, Englisch optional ( wichtig 															für Darstellung eines Datums o.ä.)
 \RequirePackage[scaled]{helvet}				%aktivieren, falls Helvetica verwendet werden soll
 
 
@@ -41,14 +41,14 @@
 
 \DeclareOption{BGETEM}{
 \AddToShipoutPictureBG{%
-\put(390,740){\includegraphics[width=6cm]{BGETEM_vektor.eps}} 	%Logo oben rechts
+\put(390,740){\includegraphics[width=6cm]{grafik_BGETEM_vektor.eps}} 	%Logo oben rechts
 }
 }
 
 
 \DeclareOption{DGUVTest}{
 \AddToShipoutPictureBG{%
-\put(390,740){\includegraphics[width=6cm]{DGUV_Test_vektor.eps}} 	%Logo oben rechts
+\put(390,740){\includegraphics[width=6cm]{grafik_DGUV_Test_vektor.eps}} 	%Logo oben rechts
 }
 }
 
@@ -144,7 +144,7 @@ www.bgetem.de/pruefstelle-dp
 \DeclareOption{DPIL}{		%Logo, Logozusatz, WebcodeDPI, Stand, beide Linien, Fußzeile
 \AddToShipoutPictureBG{
 
-\put(390,740){\includegraphics[width=6cm]{BGETEM_vektor.eps}}	%Logo oben rechts
+\put(390,740){\includegraphics[width=6cm]{grafik_BGETEM_vektor.eps}}	%Logo oben rechts
 
 \put(441,752){\parbox[t]{40mm}{{\textbf{\normalsize{\begin{flushleft}\noindent	%Logozusatz
 Fachkompetenz Druck und Papierverarbeitung\end{flushleft}}}}}}
@@ -193,7 +193,7 @@ www.bgetem.de}}}
 \DeclareOption{DPPIL}{		%Logo, WebcodeDPPI, Stand, Info-Nr, beide Linien, Fußzeile
 \AddToShipoutPictureBG{%
 
-\put(390,740){\includegraphics[width=6cm]{DGUV_Test_vektor.eps}} 	%Logo
+\put(390,740){\includegraphics[width=6cm]{grafik_DGUV_Test_vektor.eps}} 	%Logo
 \put(56,100){\line(1,0){500}}									% untere Linie
 
 \put(0,90){\parbox[t]{210mm}{\normalsize{\textcolor{gray}{\begin{center}	%Fusseile 

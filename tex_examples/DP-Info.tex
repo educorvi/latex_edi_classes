@@ -1,0 +1,77 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage{eso-pic,lipsum}
+\usepackage{graphicx} 
+\usepackage{xltxtra}
+%\setmainfont{DGUV Meta}					%deaktivieren, falls Helvetica verwendet werden soll
+\usepackage[left=20mm, right=15mm, top=55mm, bottom=40mm]{geometry} %Seitenabstände
+
+
+\usepackage{textcomp}					%Textblöcke Fusszeile
+\usepackage[absolute]{textpos}				%Textblöcke Fusszeile, Pos. (abh. von Schriftart)
+
+\usepackage[utf8x]{inputenc}				%direktes Einbinden von Umlauten
+\usepackage[english, ngerman]{babel}		%Deutsch=primäre Sprache, Englisch optional ( wichtig für 										Darstellung eines Datums o.ä.)
+\usepackage[scaled]{helvet}				%aktivieren, falls Helvetica verwendet werden soll
+\renewcommand\familydefault{\sfdefault}	%ebenfalls für Helvetica relevant	
+
+\usepackage{hyperref}					%für die Email-Adresse
+
+\usepackage{scrpage2}					%Seitenzahl unten rechts
+
+\pagestyle{scrheadings}					%Seitenummerierung in der Fusszeile
+\clearscrheadings
+\ofoot{\pagemark}
+
+
+\AddToShipoutPictureBG{%
+\put(390,740){\includegraphics[width=6cm]{BGETEM_vektor.eps}} 	%Logo oben rechts
+\put(56,100){\line(1,0){500}}					% untere Linie
+
+
+\put(56,70){\parbox[t]{50mm}{\scriptsize{\noindent	%Fusseile 1/4
+Berufsgenossenschaft\\
+Energie Textil Elektro Medienerzeugnisse\\
+\\									%leere Zeile
+Gesetzliche Unfallversicherung\\
+K\"orperschaft des \"offentlichen Rechts}}}
+
+\put(210,70){\parbox[t]{50mm}{\scriptsize{\noindent	%Fusszeile 2/4	
+Rheinstrasse 6-8\\
+65185 Wiesbaden\\
+Telefon 0611/131-0\\
+Telefax 0611/131-8222\\
+Email \href{mailto:info@bgetem.de}{info@bgetem.de} 
+}}}
+
+\put(300,70){\parbox[t]{50mm}{\scriptsize{\noindent	%Fusszeile 3/4
+Nassauische Sparkasse Wiesbaden\\
+(BLZ 510 500 15) 100 007 630\\
+IBAN DE50 5105 0015 0100 0076 30\\
+BIC/SWIFT NASSDE55XXX}}}
+
+\put(440,70){\parbox[t]{50mm}{\scriptsize{\noindent	%Fusszeile 4/4
+IK-Nr. 12069066 4\\
+Betriebsnummer\\
+48626018\\
+www.bgetem.de}}}
+
+}
+\AddToShipoutPictureBG*{
+
+\put(56,690){Stand: xx/xxxx}
+\put(465,690){Webcode: 12345678}
+\put(56,750){\textbf{\huge DP-Info}}
+\put(56,600){\line(1,0){500}} 				% obere Linie erste()=Steigung(x;y); zweite()=Länge in pt
+
+\put(441,752){\parbox[t]{40mm}{{\textbf{\normalsize{\begin{flushleft}\noindent
+Fachkompetenz Druck und Papierverarbeitung\end{flushleft}}}}}}
+}
+
+\begin{document}
+\vspace*{2cm}
+\noindent
+\textbf{\huge Titel}
+\vspace{1cm}\\
+\lipsum
+\lipsum
+\end{document}

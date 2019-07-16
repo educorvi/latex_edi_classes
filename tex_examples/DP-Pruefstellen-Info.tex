@@ -1,0 +1,55 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[a4paper]{scrartcl}
+\usepackage{eso-pic,lipsum}
+\usepackage{graphicx} 
+\usepackage{xltxtra}
+%\setmainfont{DGUV Meta}					%deaktivieren, falls Helvetica verwendet werden soll
+\usepackage[left=20mm, right=15mm, top=55mm, bottom=40mm]{geometry} %Seitenabstände
+
+
+\usepackage{textcomp}					%Textblöcke Fusszeile
+\usepackage[absolute]{textpos}				%Textblöcke Fusszeile, Pos. (abh. von Schriftart)
+
+\usepackage[utf8x]{inputenc}				%direktes Einbinden von Umlauten
+\usepackage[english, ngerman]{babel}		%Deutsch=primäre Sprache, Englisch optional ( wichtig für 										Darstellung eines Datums o.ä.)
+\usepackage[scaled]{helvet}				%aktivieren, falls Helvetica verwendet werden soll
+\renewcommand\familydefault{\sfdefault}	%ebenfalls für Helvetica relevant	
+
+\usepackage{hyperref}					%für die Email-Adresse
+
+\usepackage{scrpage2}					%Seitenzahl unten rechts
+
+\pagestyle{scrheadings}					%Seitenummerierung in der Fusszeile
+\clearscrheadings
+\ofoot{\pagemark}
+
+\usepackage{xcolor}						%Schrift einfärben
+
+\AddToShipoutPictureBG{%
+\put(390,740){\includegraphics[width=6cm]{DGUV_Test_vektor.eps}} 	%Logo oben rechts
+\put(56,100){\line(1,0){500}}					% untere Linie
+
+\put(0,90){\parbox[t]{210mm}{\normalsize{\textcolor{gray}{\begin{center}	%Fusseile 
+\noindent
+Pr\"uf- und Zertifizierungsstelle Druck und Papierverarbeitung, 65173 Wiesbaden\\
+Tel.(0611)1 31-82 19, Fax (06 11) 1 31-81 55, email: pruefstelle-dp@bgetem.de,\\
+www.bgetem.de/pruefstelle-dp
+\end{center}}}}}
+}
+\AddToShipoutPictureBG*{
+
+\put(56,690){Stand: xx/xxxx}
+\put(497,690){Info-Nr.: xxx}
+\put(465,678){Webcode: 12345678}
+\put(56,750){\textbf{\huge DP-Info}}
+\put(56,600){\line(1,0){500}} 				% obere Linie erste()=Steigung(x;y); zweite()=Länge in pt
+}
+
+\begin{document}
+\vspace*{2cm}
+\noindent
+\textbf{\huge Titel}
+\vspace{1cm}\\
+\lipsum
+\lipsum
+\end{document}
